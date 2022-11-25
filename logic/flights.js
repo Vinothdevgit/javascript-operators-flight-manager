@@ -10,11 +10,11 @@ function Flights() {
             throw new Error("The capacity of the flight must be a positive integer value");
         }
         
-      if(numberOfPassengers%flightCapacity===0){
-            flights=numberOfPassengers/flightCapacity;
+      if(passengers%capacity===0){
+            flights=passengers/capacity;
       }
         else{
-            flights=Math.floor((numberOfPassengers/flightCapacity)+1);
+            flights=Math.floor((passengers/capacity)+1);
         }
 
         return flights;
